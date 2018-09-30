@@ -1,0 +1,27 @@
+body {
+  background: url('../img/GTR.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.container {
+	margin: 0 auto;
+	font-weight: 300px;
+
+}
+
+
+img{
+	float:left;
+	padding: 10px;
+	border-radius: 20px;
+	margin-right:auto;
+	margin-left: auto;
+	transition: 0.25s ease-in-out;
+	width: 200px;
+	margin-bottom:20px;
+}
+
+img:hover{
+opacity: 0.5;
+}

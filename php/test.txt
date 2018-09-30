@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<?php
+// This PHP script will only run on post back from submit
+if(isset($_POST['submit'])){
+    if(!empty($_POST['sports'])){
+        // loop to retrieve checked values
+        foreach($_POST['sports'] as $selected){
+            echo $selected."</br>";
+        }
+    }
+}
+?>
+
+<form action="#" method="post">
+<input type="checkbox" name="sports[]" value="jogging">Jogging<br/>
+<input type="checkbox" name="sports[]" value="swimming">Swimming<br/>
+<input type="checkbox" name="sports[]" value="cycling">Cycling<br/>
+<input type="submit" name="submit" value="Send"/>
+</form>
+
+</body>
+</html>

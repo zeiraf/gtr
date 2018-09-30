@@ -1,0 +1,18 @@
+ <?php
+
+
+    if(isset($_POST['cat'])) {
+    $name = $_POST['cat'];
+
+    echo "You chose the following cat(s): <br>";
+    foreach ($name as $cat){
+    echo $cat."<br />";
+    }} // end brace for if(isset
+
+    else {
+
+    echo "You did not choose a color.";
+
+    }
+
+    ?>
